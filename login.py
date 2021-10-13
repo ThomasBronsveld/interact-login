@@ -16,12 +16,6 @@ META_DATA.reflect()
 class User(db.Model):
   __table__ = META_DATA.tables['User']
 
-class Security_Question(db.Model):
-  __table__ = META_DATA.tables['SecurityQuestion']
-
-class Security_User(db.Model):
-  __table__= META_DATA.tables['SecurityQuestion_User']
-
 #checks if database is alive
 @app.route('/')
 def testdb():
